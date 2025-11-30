@@ -1,0 +1,95 @@
+:root{
+    --bg:#f7f8fa;
+    --card:#fff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --green:#2ea44f;
+    --green-700:#238636;
+    --border:#e5e7eb;
+    --shadow:0 10px 25px rgba(0,0,0,.06);
+  }
+  
+  *{box-sizing:border-box}
+  html,body,#root{height:100%}
+  body{
+    margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+    color:var(--text); background:var(--bg);
+    border: 0;margin: 0; padding: 0;
+  }
+  
+  /* Top bar */
+  .topbar{
+    display:flex; align-items:center; gap:14px;
+    padding:14px 18px; background:#fff; border-bottom:1px solid var(--border);
+  }
+  .brand{ font-weight:800; font-size:22px; letter-spacing:.2px;}
+  .dot{width:10px;height:10px;border-radius:999px;background:var(--green);display:inline-block;margin-left:6px;vertical-align:middle}
+  .search{
+    flex:1; display:flex; align-items:center; gap:8px;
+    background:#fff; border:1px solid var(--border); border-radius:999px; padding:10px 14px; max-width:680px;
+    box-shadow:var(--shadow);
+  }
+  .search input{border:0; outline:0; width:100%; font-size:14px; color:var(--text)}
+  .pill{
+    background:var(--green); color:#fff; border:0; border-radius:10px; padding:10px 14px; font-weight:600; cursor:pointer;
+  }
+  .iconbtn{display:flex; align-items:center; gap:8px; background:#fff; padding:8px 12px; border:1px solid var(--border); border-radius:10px; cursor:pointer}
+  
+  /* Green nav */
+  .subnav{
+    background:var(--green); color:#fff; padding:10px 18px; display:flex; gap:22px; align-items:center;
+  }
+  .subnav a{color:#fff; text-decoration:none; font-weight:600}
+  .subnav .right{margin-left:auto; opacity:.95}
+  
+  /* Layout */
+  .container{max-width:1100px; margin:24px auto; padding:0 18px}
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:14px; box-shadow:var(--shadow);
+    padding:22px;
+  }
+  
+  /* Forms */
+  label{font-weight:600; font-size:14px; color:var(--text)}
+  .input, .textarea, .select{
+    width:100%; border:1px solid var(--border); border-radius:10px; padding:12px; background:#fff; font-size:14px;
+  }
+  .textarea{min-height:110px; resize:vertical}
+  .grid-2{display:grid; gap:14px; grid-template-columns:1fr 1fr}
+  .actions{display:flex; gap:10px; justify-content:flex-end}
+  .btn{background:var(--green); color:#fff; border:0; border-radius:10px; padding:12px 16px; font-weight:700; cursor:pointer}
+  .btn:active{transform:translateY(1px)}
+  .btn.outline{background:#fff;color:var(--green);border:1px solid var(--green)}
+  
+  /* Titles */
+  .h1{font-size:28px; font-weight:800; margin:0 0 14px}
+  .h2{font-size:22px; font-weight:800; margin:0 0 10px}
+  .muted{color:var(--muted)}
+  
+  /* Table */
+  .table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden}
+  .table th, .table td{ padding:12px 10px; border-bottom:1px solid var(--border); text-align:left; font-size:14px }
+  .table tr:last-child td{border-bottom:0}
+  .badge{display:inline-block; padding:4px 8px; background:#e8f7ee; color:var(--green-700); border-radius:999px; font-weight:700; font-size:12px}
+  
+  /* Listado categorías */
+  .row-actions{display:flex; gap:10px}
+  .row-actions a{cursor:pointer; text-decoration:none}
+  .row-actions .edit{color:#0ea5e9}
+  .row-actions .trash{color:#ef4444}
+  .row-actions .view{color:#22c55e}
+  
+  /* Order header */
+  .orderHead{display:flex; align-items:flex-start; gap:12px}
+  .orderHead .spacer{flex:1}
+  .orderHead .right{text-align:right}
+  
+  /* Avatar */
+  .avatar{width:120px;height:120px;border-radius:999px;background:#ddd;display:block;object-fit:cover}
+  .center{display:flex;justify-content:center}
+  
+  /* Pagination (estático para demo) */
+  .pagination{display:flex; gap:8px; align-items:center; justify-content:flex-end; margin-top:10px}
+  .page{width:28px;height:28px;border-radius:999px;border:1px solid var(--border);display:grid;place-items:center;cursor:pointer;background:#fff}
+  .page.active{background:var(--green);color:#fff;border-color:var(--green)}
+  

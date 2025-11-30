@@ -1,0 +1,112 @@
+.resumenCompra {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 350px;
+    height: fit-content;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.resumenCompra h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.resumenCompra p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.resumenCompra .gratis {
+    color: #2ea44f;
+    font-weight: 600;
+}
+
+.resumenCompra .descuento {
+    color: #fe624c;
+    font-weight: 600;
+}
+
+.resumenCompra .total {
+    font-weight: 600;
+    font-size: 18px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+.btnContinuar {
+  background-color: #3ca424;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnContinuar:hover {
+  background-color: #2d8b1a;
+}
+
+.btnContinuar {
+  background-color: #3ca424;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btnContinuar:hover {
+  background-color: #2d8b1a;
+}
+
+.btnCancelar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btnCancelar:hover {
+  background-color: #c0392b;
+}
+
+.btnGuardar {
+  background-color: #f37b27;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btnGuardar:hover {
+  background-color: #d4641d;
+}

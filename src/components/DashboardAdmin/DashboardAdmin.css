@@ -1,0 +1,25 @@
+main{
+    margin-left: 30px;
+    height: 600px;
+}
+section{
+    display: flex;
+}
+.d{
+    display:flex;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right:30px ;
+    margin: 20px;
+    background-color:  #2ea44f;
+    color: #fff;
+}
+.rango{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+b{
+    margin-right: 20px;
+}

@@ -1,0 +1,121 @@
+.espaciador-header {
+    height: 80px;
+  }
+  
+  .contenedorCheckout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    margin-top: 80px;
+  }
+  
+  .formularioCheckout {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 600px;
+  }
+  
+  .tituloPrincipal h1 {
+    font-size: 2rem;
+    color: #212121;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+  }
+  
+  .tarjetaFormularioContainer {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .imgTarjeta {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .formTarjeta {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+  }
+  
+  .campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .campo input:focus {
+    outline: none;
+    border-color: #fe624c;
+    box-shadow: 0 0 0 2px rgba(254, 98, 76, 0.1);
+  }
+  
+  .grupoCampos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .botonContinuar {
+    width: 100%;
+    padding: 12px;
+    background-color: #3ca424;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .botonContinuar:hover {
+    background-color: #2b882f;
+  }
+  
+  .error-text {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+  }
+
+  .MetodoPago {
+    font-size: 1.2rem;
+    color: #212121;
+    font-weight: 700;
+    margin: auto;
+    margin-left: 0;
+  }
+  

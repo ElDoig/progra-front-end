@@ -1,0 +1,246 @@
+.contenedorCheckout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  margin-top: 80px;
+}
+
+.tituloPrincipal {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.tituloPrincipal h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.formularioCheckout {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 600px;
+}
+
+.formularioScroll {
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.bloquePaso {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.bloquePaso:last-child {
+  margin-bottom: 0;
+}
+
+.bloquePaso h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #fe624c;
+  padding-bottom: 10px;
+}
+
+.formEnvio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formEnvio label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+}
+
+.formEnvio input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formEnvio input:focus {
+  border-color: #fe624c;
+  outline: none;
+}
+
+.metodoPago {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.opcionesPago {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.opcionesPago label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.metodoPago input[type="radio"] {
+  accent-color: #fe624c;
+}
+
+.formTarjeta {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.formQR {
+  border: 1px dashed #fe624c;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #fff4f0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.imagenQR {
+  width: 160px;
+  margin-top: 10px;
+}
+
+.metodoEnvio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.metodoEnvio label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+.metodoEnvio label:hover {
+  border-color: #fe624c;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.espaciador-header {
+  height: 80px;
+}
+
+.resumenCompra {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  min-width: 320px;
+  max-width: 350px;
+  position: sticky;
+  top: 140px;
+  height: fit-content;
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.resumenCompra h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.resumenCompra p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.resumenCompra .gratis {
+  color: #2ea44f;
+  font-weight: 600;
+}
+
+.resumenCompra .descuento {
+  color: #fe624c;
+  font-weight: 600;
+}
+
+.resumenCompra .total {
+  font-weight: 600;
+  font-size: 18px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.btnContinuar {
+  display: inline-block;      
+  text-align: center;         
+  text-decoration: none;      
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #3ca424;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnContinuar:hover {
+  background-color: #245f1d;
+}

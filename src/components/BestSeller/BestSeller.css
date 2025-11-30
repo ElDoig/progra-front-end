@@ -1,0 +1,50 @@
+.most-sold-container {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.most-sold-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.most-sold-container::-webkit-scrollbar-thumb {
+  background-color: #1b642c;
+  border-radius: 10px;
+}
+
+.product-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #1b642c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

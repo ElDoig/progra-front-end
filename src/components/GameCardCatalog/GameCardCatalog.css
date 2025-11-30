@@ -1,0 +1,34 @@
+.catalog-card{
+    text-align: center;
+    margin:20px;
+}
+
+.catalog-circle {
+  width: 150px;
+  height: 150px;
+  background-color: #1b642c; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-circle img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.catalog-container {
+  display: flex;           
+  justify-content: center; 
+  gap: 20px;               
+  flex-wrap: wrap;         
+}
+
+.catalog-card h3 {
+  font-weight: bold;       
+}

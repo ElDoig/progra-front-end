@@ -1,0 +1,9 @@
+article {
+    max-width: 300px ;
+    margin: 20px;
+}
+
+article img {
+    width: auto;
+    height: 100px;
+  }

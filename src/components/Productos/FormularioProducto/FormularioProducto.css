@@ -1,0 +1,112 @@
+.form-modal-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.form-modal {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    padding: 32px;
+    min-width: 700px;
+    max-width: 90vw;
+}
+.form-modal h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.form-modal label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+}
+.form-modal input[type="text"],
+.form-modal input[type="number"],
+.form-modal select,
+.form-modal textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    background: #fff;
+}
+.form-modal textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+.form-modal .categoria-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.form-modal .categoria-row select {
+    flex: 1;
+}
+.form-modal .categoria-row button {
+    background: #2ea44f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.form-modal .img-box {
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.form-modal .img-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+.form-modal .img-box .fa-image {
+    font-size: 40px;
+    color: #bbb;
+    margin-bottom: 8px;
+}
+.form-modal .img-box button {
+    background: #bbb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.form-modal .btn-submit {
+    background: #2ea44f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.form-modal .btn-cancel {
+    background: #fff;
+    color: #2ea44f;
+    border: 1px solid #2ea44f;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}

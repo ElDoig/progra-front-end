@@ -1,0 +1,260 @@
+.espaciador-header {
+  height: 120px;
+}
+
+.layoutPagoFinal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff !important;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+}
+
+.columnaProductos {
+  flex: 2;
+  min-width: 0;
+  max-width: 800px;
+}
+
+.columnaResumen {
+  flex: 1;
+  min-width: 320px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 100px;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.tituloExito {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+
+.tituloExito h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tituloExito p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.productosResumen {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.subtituloResumen {
+  font-size: 20px;
+  color: #333;
+  margin: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: underline;
+}
+
+.listaProductos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productoFinal {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: transform 0.2s ease;
+}
+
+.productoFinal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.productoImagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.productoImagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoProducto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoProducto h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.infoProducto p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.envio {
+  font-size: 13px;
+  background-color: #fff5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.cantidad {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cantidad strong {
+  color: #666;
+}
+
+.precioProducto {
+  font-size: 16px;
+  color: #333;
+  text-align: right;
+  font-weight: 600;
+}
+
+.iconoCheckGrande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconoCheckGrande img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.resumenCompra {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resumenCompra h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.resumenCompra p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.resumenCompra .gratis {
+  color: #2ea44f;
+  font-weight: 600;
+}
+
+.resumenCompra .descuento {
+  font-weight: 600;
+}
+
+.resumenCompra .total {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.direccionEnvio {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.direccionEnvio h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.direccionEnvio p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.iconoDelivery {
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.botonOfertas {
+  background-color: #3ca424;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.botonOfertas:hover {
+  background-color: #2f7c1f;
+  transform: translateY(-1px);
+}
+
