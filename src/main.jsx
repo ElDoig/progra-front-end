@@ -10,6 +10,7 @@ import DashboardAPage from './routes/DashboardAdminPage.jsx'
 import CategoryList from './pages/admin/CategoryList'
 import CategoryForm from './pages/admin/CategoryForm'
 import CategoryDetail from './pages/admin/CategoryDetail'
+import OrderDetail from './pages/user/OrderDetail.jsx'
 
 import Profile from './pages/user/Profile'
 import ChangePassword from './pages/user/ChangePassword.jsx'
@@ -28,39 +29,53 @@ import './App.css'
 import Registro from './routes/RegistroPage.jsx'
 import Recuperacion from './routes/RecuperacionPage.jsx'
 import { SessionProvider } from './components/Login/Session.jsx'; 
+import { SearchProvider, useSearch } from './context/SearchContext.jsx';
+
 
 
 function Home() {
+  const { busqueda } = useSearch();
+
+  const productosFiltrados = hotsale.filter((producto) => {
+    return producto.titulo.toLowerCase().includes(busqueda.toLowerCase());
+  });
+
   return (
     <div className="container">
       <section className="banner">
         <a href=""><img src="https://slider.eneba.games/resized/tzTuVy4rHd4EnUUQbLml2o1nbo8MN7TIWwjbekeNUqY_1500x400_1x-1500x400_150_0.jpg"
-  alt="banner"
-  style={{
-    display: "block",
-    margin: "0 auto",
-    width: "100%",
-    maxWidth: "1500px",
-    borderRadius: "10px"
-  }}/></a>
+          alt="banner"
+          style={{
+            display: "block",
+            margin: "0 auto",
+            width: "100%",
+            maxWidth: "1500px",
+            borderRadius: "10px"
+          }}/></a>
       </section>
-    <h2 style={{ textAlign: "left", marginTop: "10px" }}>Explora más categorías:</h2>
+
+      <h2 style={{ textAlign: "left", marginTop: "10px" }}>Explora más categorías:</h2>
       <div className="catalog-container">
         {catalogIMG.map((item) => (
           <GameCardCatalog key={item.id} titulo={item.Categoria} img={item.img} />
         ))}
       </div>
+      
       <h2 style={{ textAlign: "left", marginTop: "40px" }}>Lo más vendido:</h2>
       <div className="most-sold-container">
-        {hotsale.map((item) => (
-          <BestSeller 
-            key={item.id} 
-            titulo={item.titulo} 
-            categoria={item.categoria} 
-            precio={item.precio} 
-            img={item.img} 
-          />
-        ))}
+        {productosFiltrados.length > 0 ? (
+           productosFiltrados.map((item) => (
+            <BestSeller 
+              key={item.id} 
+              titulo={item.titulo} 
+              categoria={item.categoria} 
+              precio={item.precio} 
+              img={item.img} 
+            />
+          ))
+        ) : (
+          <h3 style={{ textAlign: 'center', width: '100%' }}>No se encontraron productos</h3>
+        )}
       </div>
     </div>
   )
@@ -113,10 +128,10 @@ const router = createBrowserRouter([
     path: "/admin/categories/:id",
     element: <App><RequireAdmin><CategoryDetail /></RequireAdmin></App>
   },
-  /*{
-    path: "/user/orders/:orderId",
-    element: <App><RequireLogin><OrderDetail /></RequireLogin></App>
-  },*/
+  {
+    path: "/user/orders", 
+    element: <App><RequireLogin><OrderDetail /></RequireLogin></App> 
+  },
   {
     path: "/user/profile",
     element: <App><RequireLogin><Profile /></RequireLogin></App>
@@ -151,11 +166,12 @@ const router = createBrowserRouter([
   }
 
 ])
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <SessionProvider>
-    <RouterProvider router={router}/>
+      <SearchProvider>
+        <RouterProvider router={router}/>
+      </SearchProvider>
     </SessionProvider>
   </StrictMode>,
 )
