@@ -29,7 +29,7 @@ const DashboardA = () => {
         try {
             const token = localStorage.getItem('token')
             const headers = token ? { Authorization: `Bearer ${token}` } : {}
-            const res = await fetch(`${API_BASE}/${path}`, { headers })
+            const res = await fetch(`${API_BASE_URL}/${path}`, { headers })
             if (!res.ok) {
                 const body = await res.text().catch(()=>null)
                 throw new Error(`HTTP ${res.status} ${body ? '- ' + body : ''}`)
